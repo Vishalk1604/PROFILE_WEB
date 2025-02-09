@@ -1,0 +1,88 @@
+.navbar {
+    width: 100%; /* Make navbar span the full width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items across the navbar */
+    align-items: center;
+    padding: 0px 0px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+.navbar nav {
+    width: 100%; /* Ensure the nav spans full width */
+    display: flex;
+    justify-content: space-between; /* Separate the button and the navbar */
+    align-items: center;
+    gap: 20px;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+header, header ul {
+    width: 100%; /* Make ul span the full width */
+    display: flex; /* Align list items horizontally */
+    flex-direction: row;
+    justify-content: left; /* Center the list items */
+    align-items: center;
+    gap: 30px;
+}
+
+header ul {
+    display: flex;
+    border-radius: 35px;
+    padding: 10px;
+}
+
+header ul li a {
+    width: 100%;
+    height: 50px;
+    padding-inline: 20px;
+    border-radius: 25px;
+    font-size: 1.03rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    position: relative;
+    transition: all ease 0.3s;
+    
+}
+header ul li a span{
+    padding-inline: 10px;
+    font-family: poppins;
+}
+
+
+
+.dark-mode {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.dark-mode:hover,
+header ul li a:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+    header ul li {
+        margin-bottom: 10px;
+    }
+}

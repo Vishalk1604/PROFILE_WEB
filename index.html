@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width , initial-scale=1.0">
+        <title>
+            Portfolio Web
+        </title>
+        <link rel="short icon" href="images/icon.png">        
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="about_me.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <script src="effects.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="navbar">
+                <header>
+                    <nav>
+                        <button class="dark-mode bg-gradient">
+                            <i class="fa-regular fa-sun"></i>
+                        </button>
+                        <ul>
+                            <li><a href="#" data-label="Home">
+                                <i class="fa-solid fa-address-book"></i>
+                                <span> P r o f i l e </span>
+                            </a></li>
+                            <li><a href="#" data-label="Education">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span> E d u c a t i o n </span>
+                            </a></li>
+                            <li><a href="#" data-label="Skills">
+                                <i class="fa-solid fa-code"></i>
+                                <span> S k i l l s </span>
+                            </a></li>
+                            <li><a href="#" data-label="Projects">
+                                <i class="fa-solid fa-folder-open"></i>
+                                <span> P r o j e c t s </span>
+                            </a></li>
+                            <li><a href="#" data-label="Contact">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span> C o n t a c t </span>
+                            </a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+
+            <!--PROFILE-->
+            <div class="profile">
+                <div class="user-profile bg-gradient">
+                    <div class="user-profile-container">
+                        <div class="my-picture">
+                            <img src="images/profile.jpg" alt="Profile "/>
+                        </div>
+                        <div class="profile-text">
+                            <span>Btech Student</span>
+                            <h1>Vishal Karun</h1>
+                            <div class="profile-social">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--button-->
+                    <div class="profile-button">
+                        <a href="#">Download CV</a> <!-- replace # cv file path download target="_blank" to open in new tab, use pdf file-->
+                        <a href="#">Contact Me</a>
+                    </div>
+                </div>
+                <div class="slides">
+                    <section id="about-me" class="section-container">
+                        <h3>Hello I'm <span id="role">Web developer</span></h3>
+                    <h1>text text text text <span>meow meow</span>   text text text text </h1>
+                    <p>text text text text text text text text text text text text text text text text text text </p>
+                    
+                    <div class="projects-number">
+                        <div class="projects-number-box">
+                            <span id="contribution-count">Loading...</span>
+                            <strong>GitHub Contribution </strong>
+                        </div>
+                        <div class="leet-code-box">
+                            <span id="leet-code-count">Loading...</span>
+                            <strong>LeetCode Streak </strong>
+                        </div>
+                    </div>
+                    </section>
+                    <section id="Education" class="section-container">
+                    </section>
+                    <section id="Skills" class="section-container">
+                    </section>
+                    <section id="Projects" class="section-container">
+                    </section>
+                    <section id="Contacts" class="section-container">
+                    </section>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

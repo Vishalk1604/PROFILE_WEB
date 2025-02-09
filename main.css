@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+:root{
+    --main-color : #0078e8;
+--secondary-color : #002f70;
+    --text-color : #ffffff;
+      --bg-color : #222222;
+ --body-bg-color : #1e1e1e;
+  --border-color : #424242;
+--gradient-start : #181818;
+  --gradient-end : #000000;
+--bg-gradient-start : #3a3a3a;
+--bg-gradient-end : #424242;
+}
+body{
+    color: var(--text-color);
+    background-image: linear-gradient(120deg , var(--bg-gradient-start), var(--bg-gradient-end)) !important;
+    background-attachment: fixed;
+}
+
+.bg-gradient{
+    background: linear-gradient(90deg , var(--gradient-start), var(--gradient-end));
+}
+
+.main-container{
+    width: 100%;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px 50px;
+}
+

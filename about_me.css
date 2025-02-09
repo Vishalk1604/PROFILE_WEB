@@ -1,0 +1,79 @@
+/* SLIDES CONTAINER */
+.slides {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 100%; /* Match the parent container width */
+    height: 100%; /* Optional: Set height to match parent */
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin; /* For modern browsers, optional for aesthetics */
+}
+
+/* HORIZONTAL SECTIONS */
+.section-container {
+    flex: 0 0 100%; /* Each section takes 100% of the container's visible width */
+    height: 100%; /* Optional: Set height to match parent */
+    background: linear-gradient(0deg, var(--gradient-start), var(--gradient-end));
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Prevent text from overflowing */
+    border-right: 1px solid var(--border-color);
+}
+
+
+/* ABOUT ME */
+
+
+#about-me{
+    padding: 85px 50px;
+}
+
+#about-me h3{
+    color: var(--text-color);   
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#about-me h3 span{
+    color: var(--main-color);
+}
+
+#about-me #role{
+    opacity: 1;
+    white-space: nowrap;
+    transition: opacity 0.5s ease-out;
+    border-right: 2px solid var(--main-color);
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#about-me h1{
+    color: var(--text-color);
+    font-size: 3rem;
+    margin: 10px 0px;
+    font-weight: 500;
+   width: 100%;
+}
+
+#about-me h1 span{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 0px 20px;
+    border-radius: 30px;
+    font-size: 2.6rem;
+}
+#about-me p{
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    max-width: 750px;
+}
+
+.projects-number{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
